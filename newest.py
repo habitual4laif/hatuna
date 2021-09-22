@@ -20,3 +20,16 @@ elif name == 18:
     print("You have to have celebrated your 18th")
 else:
     print("Enjoy your drink")
+
+#for loop
+food = ['beans', 'rice', 'eba', 'garri', 'fufu']
+
+for f in food:
+    print(f)
+    print(len(f))
+
+food = ['beans', 'rice', 'eba', 'garri', 'fufu']
+
+for f in food[3:]:
+    print(f)
+    print(len(f))

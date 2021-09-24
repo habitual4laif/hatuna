@@ -28,8 +28,24 @@ for f in food:
     print(f)
     print(len(f))
 
+#
 food = ['beans', 'rice', 'eba', 'garri', 'fufu']
 
 for f in food[3:]:
     print(f)
     print(len(f))
+
+#appending/adding more items to a list
+food = ['beans', 'rice', 'eba', 'garri', 'fufu']
+
+food.append('moi-moi')
+print(food)
+
+#
+food = ['beans', 'rice', 'eba', 'garri', 'fufu']
+
+print(food)
+food[:3] = ['moi-moi', 'bread'] #This permanently delete the items and add new ones
+print(food)
+food[3:] = ['moi-moi', 'bread']
+print(food)

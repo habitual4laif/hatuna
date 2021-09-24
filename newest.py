@@ -49,3 +49,19 @@ food[:3] = ['moi-moi', 'bread'] #This permanently delete the items and add new o
 print(food)
 food[3:] = ['moi-moi', 'bread']
 print(food)
+
+#The use of range()
+for x in range(5):
+    print(x)
+
+#
+for x in range(5, 12):
+    print(x)
+
+#
+for x in range(3):
+    print("Who's home?")
+
+#The first value tell it where to start from  and the next where to stop while the last determine the interval
+for x in range(10, 30, 5):
+    print(x)

@@ -65,3 +65,33 @@ for x in range(3):
 #The first value tell it where to start from  and the next where to stop while the last determine the interval
 for x in range(10, 30, 5):
     print(x)
+
+#video10
+num = 5
+
+while num < 10:
+    print(num)
+    num += 1
+
+
+#
+NumberRange = 26
+
+for n in range(101):
+    if n is NumberRange:
+        print(n, 'This is the number')
+        break
+
+#Assignment
+for n in range(1, 41):
+    if n % 4 == 0:
+        print(n, 'This number is divisible by 4')
+
+#
+NumbersTaken = [2, 5, 7, 4, 8]
+
+for n in range(1, 10):
+    if n in NumbersTaken:
+        continue
+    print(n)
+

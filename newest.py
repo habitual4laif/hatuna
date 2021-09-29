@@ -95,3 +95,20 @@ for n in range(1, 10):
         continue
     print(n)
 
+
+#Creating a function
+def usd_naira(usd):
+    total = 489 * usd
+    print(total)
+    
+usd_naira(80)
+usd_naira(1000)
+
+#You can't use the result of a function without the keyword RETURN
+def allow_to_date(guys_age):
+    girls_age = guys_age/2 + 7
+    return girls_age
+
+for n in range(26, 36, 2): #this select ages of guys
+    guy_1 = allow_to_date(n)
+    print("Your age is ",n, " and you are allowed to date ladies of year ", guy_1, " or older")

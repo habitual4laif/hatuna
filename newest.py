@@ -112,3 +112,32 @@ def allow_to_date(guys_age):
 for n in range(26, 36, 2): #this select ages of guys
     guy_1 = allow_to_date(n)
     print("Your age is ",n, " and you are allowed to date ladies of year ", guy_1, " or older")
+
+
+#Setting a default value for a function 
+def gender(sex = "Unknown"):
+    if sex == 'm':
+        sex = "Male"
+    elif sex == 'f':
+        sex = "Female"
+    print(sex)
+
+gender('m')
+gender('f')
+gender()
+
+
+#Key argument 
+def key_argument(name ='Ade', action = 'is', obj = 'boy', ans = 'Yes'):
+    print(name, action, obj, ans)
+
+key_argument()
+key_argument('Ola', 'went', 'to school', 'today')
+key_argument(action='mumu')
+key_argument(ans = 'no', name ='Sade')
+
+
+
+
+
+

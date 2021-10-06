@@ -137,7 +137,30 @@ key_argument(action='mumu')
 key_argument(ans = 'no', name ='Sade')
 
 
+#Flexible number argument
+def addition(*anyword): #Any word after * sign can accommodate large variables
+    total = 0
+    for a in anyword:
+        total += a
+    print(total)
+    
+addition(50)
+addition(32, 44, 37)
+addition(474464, 5775858, 334)
+
+#Unpacking argument
+def cgpa(math, phy, chem, eng):
+    gpa = (math*0.25) + (phy*0.25) + (chem*0.25) + (eng*0.25)
+    print(gpa)
+    
+score = [76, 71, 65, 53]
+cgpa(score[0], score[1], score[2], score[3]) #Instead going this route, unpack everything with a short code
+cgpa(*score) #This is the unpacking
 
 
+#Dictionary what has {} is called set in python video20
+classmates = {'Ola':' is tallest', 'Ade':' is shortest', 'Bisi':' is smartest', 'Ada':' is dumbest'} #first parameter is call key while the second parameter is call value
 
+for key, value in classmates.items(): #You can use any word or letter for 'key' and 'value'
+    print(key + value)
 

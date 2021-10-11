@@ -164,3 +164,24 @@ classmates = {'Ola':' is tallest', 'Ade':' is shortest', 'Bisi':' is smartest', 
 for key, value in classmates.items(): #You can use any word or letter for 'key' and 'value'
     print(key + value)
 
+
+
+#Modules
+import another #this file is available on same folder
+import random #this file came with python
+
+another.beans()
+y = random.randrange(1, 200)
+print(y)
+
+
+#To download image from a webpage Video22
+import random
+import urllib.request
+
+def download_web_image(url):
+    name = random.randrange(1, 1000)
+    fullname = str(name) + '.jpg'   #To change number to string datatype, use "str()"
+    urllib.request.urlretrieve(url, fullname)
+    
+download_web_image("http://www.strutchannelfittings.com/assets/images/LED%201.jpg")

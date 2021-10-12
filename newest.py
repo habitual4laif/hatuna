@@ -185,3 +185,18 @@ def download_web_image(url):
     urllib.request.urlretrieve(url, fullname)
     
 download_web_image("http://www.strutchannelfittings.com/assets/images/LED%201.jpg")
+
+
+#How to write on a file video23
+fw = open('simple.txt', 'w') #the first string in open() name the file and the next tell it what to do. w (a keyword) means write
+fw.write('This is what I intend writing on this file\n')
+fw.write('What do you think i should write on this next line\n')
+fw.close() #Ensure each file is closed after writing or reading
+
+
+fr = open('simple.txt', 'r') #This is to read the file created earlier
+text = fr.read()
+print(text)
+fr.close()
+
+

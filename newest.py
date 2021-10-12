@@ -200,3 +200,20 @@ print(text)
 fr.close()
 
 
+#Download a csv file video24
+from urllib import request
+
+csv_url = 'https://support.spatialkey.com/wp-content/uploads/2021/02/Sacramentorealestatetransactions.csv'
+
+def download_csv(csv_url):
+    result_of_url = request.urlopen(csv_url) #This open the url of the csv file we want to download
+    csv = result_of_url.read() #This will read the data gotten we just got
+    csv_str = str(csv) #We want to be sure the data is a string
+    lines = csv_str.split(r'\r') #We want ensure the data is not one line but break the lines 
+    destination = r'data_real11001a.csv' #This is the name we give the file
+    file_name = open(destination, "w") #We will paste/write the data on the file
+    for line in lines:
+        file_name.write(line + "\n")
+    file_name.close()
+
+download_csv(csv_url)

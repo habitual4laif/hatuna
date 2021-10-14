@@ -252,3 +252,26 @@ def get_single_item_data(item_url):
 trade_spider(1)
 
 
+#Creating Class and Object
+class Enemy:
+    life = 3
+
+    def attack(self):  #for functions inside a class, 'self' is what will be inside the bracket
+        print('ouchi')
+        self.life -= 1
+
+    def check(self):
+        if self.life <= 0:
+            print('I am dead')
+        else:
+            print('Enemy has ' + str(self.life) + ' life left')
+
+enemy1 = Enemy() #enemy1 is an objet of class Enemy
+enemy2 = Enemy() 
+enemy1.attack()
+enemy1.attack()
+enemy1.check()
+enemy2.check()
+
+
+

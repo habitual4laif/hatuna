@@ -274,4 +274,38 @@ enemy1.check()
 enemy2.check()
 
 
+#Initiallizing init
+class Enemy:
 
+    def __init__(self, x):
+        super().__init__()
+        self.energy = x
+        print('What again!') #Even if this is not called, it will definitely run first
+
+    def get_energy(self):
+        print(self.energy)
+
+jason = Enemy(5)
+sandy = Enemy(18)
+
+jason.get_energy()
+sandy.get_energy()
+
+
+#Initiallizing init
+class Girl:
+
+    gender = 'female'  #This is a class variable (It will be default for everyone - as female)
+
+    def __init__(self, name):
+        super().__init__()
+        self.name = name #This is an instance variable
+        self.gender = 'male'
+
+a = Girl('Sade')
+b = Girl('Jumoke')
+
+print(a.gender)
+print(a.name)
+print(b.gender)
+print(b.name)

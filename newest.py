@@ -309,3 +309,46 @@ print(a.gender)
 print(a.name)
 print(b.gender)
 print(b.name)
+
+
+#Class inheritance
+class Parent():
+
+    def last_name(self):
+        print('Biden')
+
+class Child(Parent): #By default once the Parent classname is added to a child class, the child inherit everything the parent has
+    def first_name(self):
+        print('Joe')
+
+#    def last_name(self):
+#        print('Bush') #The childclass has power to over write whatsoever the parent has by creating it's own
+
+name = Child()
+name.first_name()
+name.last_name()
+
+
+#Multiple inheritance 
+class Mario():
+    
+    def move(self):
+        print('I can move around')
+
+class BigMario():
+
+    def eat(self):
+        print('I eat to be big')
+
+class SmallMario():
+
+    def smaller(self):
+        print('I am smaller because of an enemy')
+
+class BiggerMario(Mario, BigMario, SmallMario): #This class can inherit as many class as possible
+    pass #This do nothing but use to continue the execution with getting error
+
+life = BiggerMario()
+life.move()
+life.eat()
+life.smaller()

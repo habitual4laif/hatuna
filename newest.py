@@ -352,3 +352,19 @@ life = BiggerMario()
 life.move()
 life.eat()
 life.smaller()
+
+
+#Threading
+import threading
+
+class Messager(threading.Thread):
+    def run(self):
+#        return super().run()
+        for _ in range(10): #What _ means is that we don't care about what the value of the looping is. Just loop for us jare
+            print(threading.currentThread().getName())
+
+
+send = Messager(name = 'We are sending a Message')
+receive = Messager(name = 'We are receiveing a Message')
+send.start()
+receive.start()

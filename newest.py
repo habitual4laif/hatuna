@@ -408,3 +408,23 @@ def create_dictionary(clean_word_list):
         print(key, value)
 
 bstart('https://www.hotnigerianjobs.com/field/223/electrical-electronic-engineering-jobs-in-nigeria')
+
+
+#Unpacking of lists of items
+date, food, price = ['Sept, 22, 2021', 'Moi moi', '5,821'] #This is how to unpack when the same length of LHS is equal RHS
+print(date)
+print(food)
+print(price)
+
+
+def drop_first_last(grades):
+    first, *middle, last = grades #But when LHS is not equal to RHS, use this
+    average = sum(middle ) / len(middle)
+    print(average)
+    print(first)
+    print(last)
+    print(middle)
+
+drop_first_last([44, 83, 93, 74, 58, 61, 82])
+
+
